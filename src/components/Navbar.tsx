@@ -1,10 +1,13 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 import { Menu, X } from "lucide-react";
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
+  const router = useRouter();
 
   const navLinks = [
     { href: "#top", label: "Home" },
@@ -14,7 +17,19 @@ export const Navbar = () => {
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
+    setIsMenuOpen(false);
 
+    // If not on home page, navigate to home first
+    if (pathname !== "/") {
+      if (href === "#top") {
+        router.push("/");
+      } else {
+        router.push("/" + href);
+      }
+      return;
+    }
+
+    // On home page, scroll to section
     if (href === "#top") {
       window.scrollTo({ top: 0, behavior: "smooth" });
     } else {
@@ -23,8 +38,6 @@ export const Navbar = () => {
         element.scrollIntoView({ behavior: "smooth" });
       }
     }
-
-    setIsMenuOpen(false);
   };
 
   return (
