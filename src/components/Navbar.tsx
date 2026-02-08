@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import { Menu, X } from "lucide-react";
 
@@ -51,10 +52,13 @@ export const Navbar = () => {
               onClick={(e) => handleNavClick(e, "#top")}
               className="flex items-center gap-2"
             >
-              {/* Logo placeholder - replace with actual logo */}
-              <div className="w-8 h-8 bg-black rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">A</span>
-              </div>
+              <Image
+                src="/logo.png"
+                alt="Acuity"
+                width={32}
+                height={32}
+                className="w-8 h-8"
+              />
               <span className="font-semibold text-xl text-black">Acuity</span>
             </a>
           </div>

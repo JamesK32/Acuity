@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useRef } from "react";
+import Image from "next/image";
 
 export function CTA() {
   const [email, setEmail] = useState("");
@@ -203,8 +204,8 @@ export function CTA() {
         {/* Content */}
         <div className="relative z-20 flex flex-col items-center gap-6 px-4">
           {/* Acuity Logo */}
-          <div className="w-20 h-20 bg-black rounded-2xl flex items-center justify-center shadow-xl animate-float">
-            <span className="text-white font-bold text-3xl">A</span>
+          <div className="w-20 h-20 rounded-2xl shadow-xl animate-float overflow-hidden">
+            <Image src="/logo.png" alt="Acuity" width={80} height={80} className="w-full h-full" />
           </div>
 
           {/* Headline */}

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 
 export function Footer() {
   return (
@@ -10,9 +11,7 @@ export function Footer() {
           {/* Brand */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-black rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">A</span>
-              </div>
+              <Image src="/logo.png" alt="Acuity" width={32} height={32} className="w-8 h-8" />
               <span className="font-semibold text-xl text-black">Acuity</span>
             </div>
             <p className="text-neutral-500 text-sm leading-relaxed max-w-sm">
