@@ -50,16 +50,6 @@ export function Footer() {
                   hello@acuity.com
                 </a>
               </li>
-              <li>
-                <a href="https://twitter.com/acuity" target="_blank" rel="noopener noreferrer" className="text-neutral-500 hover:text-black text-sm transition-colors">
-                  Twitter
-                </a>
-              </li>
-              <li>
-                <a href="https://linkedin.com/company/acuity" target="_blank" rel="noopener noreferrer" className="text-neutral-500 hover:text-black text-sm transition-colors">
-                  LinkedIn
-                </a>
-              </li>
             </ul>
           </div>
         </div>
