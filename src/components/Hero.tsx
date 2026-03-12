@@ -39,17 +39,8 @@ export function Hero() {
       >
         {/* Video/Demo Placeholder */}
         <div className="w-full h-full flex flex-col items-center justify-center bg-gradient-to-br from-neutral-100 to-neutral-200 rounded-xl">
-          {/* Play button overlay */}
-          <button className="w-20 h-20 bg-black rounded-full flex items-center justify-center hover:bg-neutral-800 transition-colors group">
-            <Play className="w-8 h-8 text-white ml-1 group-hover:scale-110 transition-transform" />
-          </button>
-          <p className="mt-4 text-neutral-500 text-sm font-medium">
-            Watch Demo Video
-          </p>
-
-          {/* Helper text for development */}
-          <p className="mt-8 text-neutral-400 text-xs">
-            Demo video placeholder - replace with actual video
+          <p className="text-2xl md:text-3xl font-semibold text-neutral-400">
+            Demo Coming Soon
           </p>
         </div>
       </ContainerScroll>
