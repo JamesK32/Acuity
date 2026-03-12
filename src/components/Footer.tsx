@@ -46,8 +46,8 @@ export function Footer() {
             <h4 className="font-semibold text-black mb-4">Contact</h4>
             <ul className="space-y-3">
               <li>
-                <a href="mailto:hello@acuity.com" className="text-neutral-500 hover:text-black text-sm transition-colors">
-                  hello@acuity.com
+                <a href="mailto:acuity.focus@gmail.com" className="text-neutral-500 hover:text-black text-sm transition-colors">
+                  acuity.focus@gmail.com
                 </a>
               </li>
             </ul>
